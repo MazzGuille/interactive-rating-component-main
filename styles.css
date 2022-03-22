@@ -182,9 +182,11 @@ header {
 /*---thanks section end---*/
 
 /*---footer section start---*/
+
 .attribution {
-  font-size: 11px;
+  font-size: 1.4rem;
   text-align: center;
+  color: var(--Orange);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

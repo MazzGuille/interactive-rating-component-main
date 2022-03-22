@@ -12,6 +12,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&family=Overpass:wght@400;700&family=Poppins:wght@300;400;600&display=swap");
+@import "https://unpkg.com/open-props";
 
 * {
   box-sizing: border-box;
@@ -34,7 +35,7 @@ body {
   justify-content: center;
   background-color: var(--Very-Dark-Blue);
 }
-
+/*---rating section start---*/
 .wrapper1 {
   display: flex;
   flex-direction: column;
@@ -60,7 +61,7 @@ header {
   border-radius: 50%;
 }
 
-/*---rating section start---*/
+
 .main1 {
   display: flex;
   flex-direction: column;
@@ -92,6 +93,17 @@ header {
   border-radius: 50%;
 }
 
+.rating:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.rating-focus{
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+}
+
 .btn-container1 {
   margin: 2rem 0;
   align-self: center;
@@ -112,8 +124,11 @@ header {
 }
 
 .btn1:hover{
+    background-color: var(--White);
+    color: var(--Orange);
     cursor: pointer;
 }
+
 
 /*---rating section end---*/
 
@@ -133,6 +148,9 @@ header {
 
 .switch-2 {
   display: none;
+}
+
+.img-container img{
 }
 
 .raiting-result {
@@ -161,11 +179,9 @@ header {
 .thank-you p {
   color: var(--Medium-Grey);
 }
+/*---thanks section end---*/
 
-
-
-/*---thanks section start---*/
-
+/*---footer section start---*/
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -173,3 +189,34 @@ header {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/*---footer section end---*/
+
+/*---Media Query section start---*/
+
+@media (min-width: 700px){
+  .wrapper1, .wrapper2{
+    margin-top: 10%;
+    margin-left: 50%;
+    margin-right: 50%;
+    max-width: 33rem;
+    padding: 2.5rem;
+  }
+
+.main1{
+  margin-bottom: 4rem;
+}
+
+  .title1{
+    margin: 2rem 0;
+  }
+
+  .text1{
+    line-height: 2rem;
+  }
+
+  .raiting-result{
+    width: fit-content;
+  }
+}
+
+/*---Media Query section end---*/

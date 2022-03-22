@@ -111,6 +111,10 @@ header {
   font-size: 1.5rem;
 }
 
+.btn1:hover{
+    cursor: pointer;
+}
+
 /*---rating section end---*/
 
 /*---thanks section start---*/
@@ -157,6 +161,8 @@ header {
 .thank-you p {
   color: var(--Medium-Grey);
 }
+
+
 
 /*---thanks section start---*/
 
